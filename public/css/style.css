@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+    --var-primary-color: rgb(74, 36, 157);
+    --var-secondary-color: rgb(0, 159, 189);
+    --var-accent-color: rgb(249, 226, 175);
+    --var-light-color: rgb(246, 245, 245);
+    --font-header: "Roboto";
+    --font-body: "Montserrat";
+    --font-sub: "Caveat", cursive;
+}
+body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: #e9f6ff; */
+    overflow-x: hidden;
+}
+
+.img {
+    width: 100%;
+}
+
+.navigation {
+   
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+.nav{
+    background-color: var(--var-light-color);
+    margin-top: 24px;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.nav .nav-logo .img-fluid {
+    width: 60px;
+}
+
+.nav .nav-logo .nav-name {
+    font-weight: bold;
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    color: var(--var-primary-color);
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    text-decoration: none;
+    margin-right: 24px;
+    font-family: var(--font-header);
+    display: inline;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+
+.hero-section {
+    border-radius: 8px;
+    background: rgb(204, 236, 241);
+    background: linear-gradient(
+        198deg,
+        rgba(204, 236, 241, 1) 0%,
+        rgba(74, 36, 157, 1) 100%
+    );
+    height: 90vh;
+}
+
+.hero-div .row {
+    margin: 200px 0 120px 0;
+}
+
+.right-content{
+    margin-left: 64px;
+}
+
+
+
+.hero-div .right-content .slogan {
+    font-family: var(--font-sub), sans-serif;
+    color: var(--var-light-color);
+    line-height: 1;
+    font-size: 120px;
+}
+
+.hero-div .right-content .slogan strong {
+    font-family: var(--font-header), sans-serif;
+    color: var(--var-accent-color);
+    font-weight: bold;
+}
+
+.hero-div .right-content .desc {
+    color: var(--var-light-color);
+    font-weight: 400;
+    font-family: var(--font-body);
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+.hero-div .left-content img{
+    filter: drop-shadow(30px 50px 40px #000);
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    z-index: 0;
+
+}
+
+/* SERVICE SECTION */
+
+.service-list{
+    margin: 110px 0 120px 0;
+}
+
+.service-list .top-title{
+    font-family: var(--font-header);
+    color: var(--var-secondary-color);
+    line-height: 16px;
+}
+
+.service-list .section-title{
+    font-family: var(--font-header);
+    line-height: 1;
+    font-size: 2rem;
+}
+.service-content .img-fluid{
+    background-color: var(--var-light-color);
+    border-radius: 16px;
+}
+
+.service-content .img-service{
+    background-color: var(--var-light-color);
+    padding: 0;
+    margin: 0;
+
+}
+.service-content img{
+    width: auto;
+    max-height: 350px;
+    padding: 16px;
+    border-radius: 24px;
+   
+}
+
+.service-content .card{
+    margin: 16px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 24px;
+    padding: 16px;
+}
+
+.service-title{
+    font-family: var(--font-header);
+    font-weight: bold;
+    word-break: normal;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+.service-description{
+    line-height: 1.6;
+    word-break: normal;
+    margin-bottom: 16px;
+}
+
+
+
+
+@keyframes float {
+	0% {
+        
+		transform: translatey(0px);
+	}
+	50% {
+        
+		transform: translatey(-20px);
+	}
+	100% {
+       
+		transform: translatey(0px);
+	}
+}
