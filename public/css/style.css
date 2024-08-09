@@ -22,13 +22,12 @@ body {
 }
 
 .navigation {
-   
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 1;
 }
-.nav{
+.nav {
     background-color: var(--var-light-color);
     margin-top: 24px;
     border-radius: 8px;
@@ -73,14 +72,12 @@ body {
 }
 
 .hero-div .row {
-    margin: 110px 0 120px 0;
+    margin: 250px 0 120px 0;
 }
 
-.right-content{
+.right-content {
     margin-left: 64px;
 }
-
-
 
 .hero-div .right-content .slogan {
     font-family: var(--font-sub), sans-serif;
@@ -101,88 +98,135 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     letter-spacing: 2px;
+    margin: 24px 0 32px 0;
 }
 
-.hero-div .left-content img{
+.hero-div .left-content img {
     filter: drop-shadow(30px 50px 40px #000);
     transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
     z-index: 0;
-
 }
+
+.solutions-right{
+    margin: 10px;
+}
+
+.solutions-right-left{
+    background-color: var(--var-accent-color);
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.solutions-right .years,
+.solutions-right .clients{
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--var-light-color);
+    height: 48%;
+}
+
+.solutions-right .years{
+    background-color: var(--var-primary-color);
+    margin-bottom: 16px;
+}
+
+.solutions-right .solution-title{
+    font-size: 40px;
+    margin: 8px 24px 24px 0 ;
+}
+
+.solutions-right .years .solutions-sub,
+.solutions-right .clients .solutions-sub{
+    font-weight: 400;
+    font-family: var(--font-body);
+    line-height: 1;
+}
+
+.solutions-right .clients{
+    background-color: var(--var-secondary-color);
+}
+
+
+
+.solutions-right-left img{
+    width: 260px;
+    margin: -20px 64px 0px;
+}
+
+.solutions-left .title{
+    font-family: var(--font-header);
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 24px;
+}
+
+.solutions-left .solutions-slogan{
+    font-weight: 600;
+    font-family: var(--font-body);
+    margin-bottom: 24px;
+}
+
+.solutions-left .solutions-desc{
+    margin-top: 24px;
+}
+
 
 /* SERVICE SECTION */
 
-.service-list{
+.service-list {
     margin: 110px 0 120px 0;
 }
 
-.service-list .top-title{
+.service-list .top-title {
     font-family: var(--font-header);
     color: var(--var-secondary-color);
     line-height: 16px;
 }
 
-.service-list .section-title{
+.service-list .section-title {
     font-family: var(--font-header);
     line-height: 1;
     font-size: 2rem;
 }
-.service-content .img-fluid{
+
+.service-card{
     background-color: var(--var-light-color);
-    border-radius: 16px;
+    padding: 32px;
+    border-radius: 8px;
+    margin-top: 32px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.service-content .img-service{
-    background-color: var(--var-light-color);
-    padding: 0;
-    margin: 0;
-
-}
-.service-content img{
-    width: auto;
-    max-height: 350px;
-    padding: 16px;
-    border-radius: 24px;
-   
+.service-card .service-img{
+    background-color: var(--var-accent-color);
+    width: 50px;
+    margin-bottom: 24px ;
 }
 
-.service-content .card{
-    margin: 16px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 24px;
-    padding: 16px;
+.service-card .service-img img{
+    width: 90px;
 }
 
-.service-title{
+.service-card .service-title{
     font-family: var(--font-header);
-    font-weight: bold;
-    word-break: normal;
     margin-bottom: 24px;
-    line-height: 1;
 }
 
-.service-description{
+.service-card .service-desc{
+    font-weight: 400;
     line-height: 1.6;
-    word-break: normal;
-    margin-bottom: 16px;
 }
-
-
 
 
 @keyframes float {
-	0% {
-        
-		transform: translatey(0px);
-	}
-	50% {
-        
-		transform: translatey(-20px);
-	}
-	100% {
-       
-		transform: translatey(0px);
-	}
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }

@@ -28,6 +28,42 @@
             </div>
         </div>
 
+        <section class="solutions-section pt-4">
+            <div class="container">
+                <div class="solutions">
+                    <div class="row p-4">
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="solutions-right">
+                                <div class="years">
+                                    <h1 class="solution-title">25</h1>
+                                    <p class="solutions-sub">years of <br> appearance</p>
+                                </div>
+                                <div class="clients">
+                                    <h1 class="solution-title">+50k</h1>
+                                    <p class="solutions-sub">satisfied <br> Customer</p>
+                                </div>
+                            </div>
+                            <div class="solutions-right-left">
+                                <img src="../img/Female-Dentist-PNG-e1664112114442.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="solutions-left">
+                                <h1 class="title">Dr. Giolo Evora</h1>
+                                <p class="solutions-slogan">Combines cutting-edge diagnostic and therepuetic technology with his more than 25 years of extensive orthodontic experience, to provide superior treatment. </p>
+
+                                <button class="btn btn-primary">Book Now</button>
+
+                                <p class="solutions-desc">Our extensive experience, beautiful offices, and friendly, talented staff make us your premier  destination for orthodontic treatment in Makati City areas. Contact us today to get started with Dr. Giolo Evora, or book online. We look forward to seing you in our offices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </section>
+
         <section class="service-section ">
             <div class="container">
                 <div class="service-list">
@@ -41,77 +77,39 @@
                         <div class="col-12 col-md-6 text-end">
                             <button class="btn btn-primary">See more</button>
                         </div>
-                    </div>
 
+                        <div class="col-12 col-md-4">
+                            <div class="service-card">
+                                <div class="service-img">
+                                    <img src="../img/root-canal.png" alt="">
+                                </div>
 
-                    <div class="service-content pt-xl-5">
-                        <div class="row no-gutters">
-                            <div class="col-12 col-md-6 px-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row d-flex justify-content-center align-items-center">
-                                            <div class="col-md-6">
-                                                <h1 class="service-title">Cosmetic Dentistry</h1>
-                                                <p class="service-description">Transform your smile with personalized
-                                                    cosmetic dentistry, offering tailored treatments that enhance both your
-                                                    appearance and confidence, leaving you with a radiant, natural-looking
-                                                    smile.</p>
-                                                <button class="btn btn-primary">Read more</button>
-                                            </div>
-                                            <div class="col-md-6 text-center img-service">
-                                                <img src="../img/different-types-of-dental-implants-1080x675.webp"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h1 class="service-title">Root Canal</h1>
+                                <p class="service-desc">A root canal is a quick, effective way to stop tooth pain and save your natural tooth. Our advanced, pain-free procedure gets you back to smiling in no time!</p>
                             </div>
-                           
-                            <div class="col-12 col-md-6 px-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row d-flex justify-content-center align-items-center">
-                                            <div class="col-md-6">
-                                                <h1 class="service-title">Root Canal Theraphy</h1>
-                                                <p class="service-description">A precise, gentle treatment to save your
-                                                    tooth from decay or damage, alleviate pain, and restore dental health.
-                                                    Our approach ensures comfort and long-term functionality, helping you
-                                                    maintain a healthy, natural smile.</p>
-                                                <button class="btn btn-primary">Read more</button>
-                                            </div>
-                                            <div class="col-md-6 text-center img-service">
-                                                <img src="../img/different-types-of-dental-implants-1080x675.webp"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="service-card">
+                                <div class="service-img">
+                                    <img src="../img/root-canal.png" alt="">
                                 </div>
+
+                                <h1 class="service-title">Root Canal</h1>
+                                <p class="service-desc">A root canal is a quick, effective way to stop tooth pain and save your natural tooth. Our advanced, pain-free procedure gets you back to smiling in no time!</p>
                             </div>
-                            <div class="col-12 col-md-6 px-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row d-flex justify-content-center align-items-center">
-                                            <div class="col-md-6">
-                                                <h1 class="service-title">Root Canal Theraphy</h1>
-                                                <p class="service-description">A precise, gentle treatment to save your
-                                                    tooth from decay or damage, alleviate pain, and restore dental health.
-                                                    Our approach ensures comfort and long-term functionality, helping you
-                                                    maintain a healthy, natural smile.</p>
-                                                <button class="btn btn-primary">Read more</button>
-                                            </div>
-                                            <div class="col-md-6 text-center img-service">
-                                                <img src="../img/different-types-of-dental-implants-1080x675.webp"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="service-card">
+                                <div class="service-img">
+                                    <img src="../img/root-canal.png" alt="">
                                 </div>
+
+                                <h1 class="service-title">Root Canal</h1>
+                                <p class="service-desc">A root canal is a quick, effective way to stop tooth pain and save your natural tooth. Our advanced, pain-free procedure gets you back to smiling in no time!</p>
                             </div>
-                           
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
