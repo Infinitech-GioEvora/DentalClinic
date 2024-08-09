@@ -63,18 +63,17 @@ body {
 /* Hero Section */
 
 .hero-section {
-    border-radius: 8px;
     background: rgb(204, 236, 241);
     background: linear-gradient(
         198deg,
         rgba(204, 236, 241, 1) 0%,
         rgba(74, 36, 157, 1) 100%
     );
-    height: 90vh;
+    height: 100vh;
 }
 
 .hero-div .row {
-    margin: 200px 0 120px 0;
+    margin: 110px 0 120px 0;
 }
 
 .right-content{
