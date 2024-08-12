@@ -14,7 +14,7 @@
                         <li class="nav-item">Blog</li>
                         <li class="nav-item">About</li>
                         <li class="nav-item">Contact</li>
-                        <li class="nav-item"><button class="btn btn-primary">Book Now</button></li>
+                        <li class="nav-item"><a href="/dental/book-now" class="btn btn-primary">Book Now</a></li>
                     </ul>
                 </div>
             </div>
