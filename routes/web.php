@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\ScheduleController;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ScheduleController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +26,20 @@ Route::prefix('dental')->group(function () {
        return view('Homepage/Booking');
     });
    
+});
+
+Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin/dashboard-data', [AdminController::class, 'dashboard_data']);
+
+Route::prefix('admin/schedules')->group(function () {
+    Route::get('/', [ScheduleController::class, 'index']);
+    Route::get('/all', [ScheduleController::class, 'all']);
+    Route::post('/add', [ScheduleController::class, 'add']);
+    Route::get('/edit/{id}', [ScheduleController::class, 'edit']);
+    Route::post('/upd', [ScheduleController::class, 'upd']);
+    Route::get('/del/{id}', [ScheduleController::class, 'del']);
+
+    Route::get('/change/{id}/{status}', [ScheduleController::class, 'change_status']);
 });
 
 Route::get('/api/getSlots', [ScheduleController::class, 'getSlots']);
