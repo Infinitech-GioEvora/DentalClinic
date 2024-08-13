@@ -25,6 +25,18 @@ Route::prefix('dental')->group(function () {
     Route::get('/book-now', function () {
        return view('Homepage/Booking');
     });
+    Route::get('/about', function () {
+        return view('Homepage/About');
+     });
+     Route::get('/services', function () {
+        return view('Homepage/Services');
+     });
+     Route::get('/blog', function () {
+        return view('Homepage/Blog');
+     });
+     Route::get('/contact', function () {
+        return view('Homepage/Contact');
+     });
    
 });
 
@@ -44,5 +56,5 @@ Route::prefix('admin/schedules')->group(function () {
 
 Route::get('/api/getSlots', [ScheduleController::class, 'getSlots']);
 
-Route::post('/submit/reservation', [ScheduleController::class, 'submitbook']);
+Route::post('/submit/reservation', [ScheduleController::class, 'add']);
 

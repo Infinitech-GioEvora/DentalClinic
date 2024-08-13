@@ -100,31 +100,31 @@ class ScheduleController extends Controller
         return response()->json(['slots' => $slots]);
     }
 
-    public function submitbook(Request $request)
-    {
-        // $request->validate([
-        //     'code' => 'required',
-        // ]);
+    // public function submitbook(Request $request)
+    // {
+    //     // $request->validate([
+    //     //     'code' => 'required',
+    //     // ]);
 
-        $record = new Model();
+    //     $record = new Model();
 
-        $keys = [
-            'name',
-            'email',
-            'number',
-            'date',
-            'time',
-        ];
+    //     $keys = [
+    //         'name',
+    //         'email',
+    //         'number',
+    //         'date',
+    //         'time',
+    //     ];
 
-        foreach ($keys as $key) {
-            if ($key == " ") {
-            } else {
-                $record->$key = $request->$key;
-            }
-        }
+    //     foreach ($keys as $key) {
+    //         if ($key == " ") {
+    //         } else {
+    //             $record->$key = $request->$key;
+    //         }
+    //     }
 
-        $record->save();
+    //     $record->save();
 
-        return response(['msg' => "Added"]);
-    }
+    //     return response(['msg' => "Added"]);
+    // }
 }

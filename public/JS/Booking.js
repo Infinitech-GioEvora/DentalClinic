@@ -12,6 +12,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         var date = $('.selected-date').text();
+       
         var formData = new FormData(this);
         formData.append("date", date);
 
@@ -23,7 +24,10 @@ $(document).ready(function () {
             processData: false,
             success: function (res) {
                 toastr.success(res.msg);
-                $('.create-schedule')[0].reset();
+                $('.create-schedule').trigger('reset')
+                $('.selected-date').text("No Date Selected");
+                $('.slotss').text("0");
+                $('.date-time').text("No Date and time Selected");
             },
             error: function (res) {
                 console.log(res)

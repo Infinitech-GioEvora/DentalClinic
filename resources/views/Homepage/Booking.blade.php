@@ -5,33 +5,27 @@
 @section('content')
 
     <main>
-        <section class="hero-section">
-
+        <section class="hero">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1 class="header">Book Now</h1>
+                    <p><a href="/">Home </a> / Book Now</p>
+                </div>
+            </div>
         </section>
 
-        <section class="book-section">
+        <section class="book-section page-section">
             <div class="container">
-                {{-- <div class="sectionTitle">
-                    <h4 class="top-title">Our Staff</h4>
-                    <h1 class="section-title">
-                        Meet our specialists
-                    </h1>
-                </div> --}}
-                <div class="card p-4">
+                <div class="card border-0 p-4">
                     <form class="create-schedule">
-
-                    <div class="row">
-                       
-                        <div class="col-12 col-md-6">
-                            <div id='calendar'></div>
-
-                        </div>
-                        <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div id='calendar'></div>
+                            </div>
+                            <div class="col-12 col-md-6">
 
 
-                            <div class="card p-4 ">
-
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center date-select">
                                     <div class="icon">
                                         <i class="fa-solid fa-calendar-days"></i>
                                         Date:
@@ -39,7 +33,7 @@
                                     <div class="selected-date" name="date">No Date Selected</div>
                                 </div>
 
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center time-select">
                                     <div class="icon">
                                         <i class="fa-solid fa-calendar-check"></i>
                                         Slots Available:
@@ -48,129 +42,119 @@
                                     <div class="slotss">0</div>
                                 </div>
 
-                            </div>
-                            <div class="time-selection">
-                                <div class="radio-inputs text-center">
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="8:00 AM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">8:00 AM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="9:00 AM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">9:00 AM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="10:00 AM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">10:00 AM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="11:00 AM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">11:00 AM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="01:00 PM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">01:00 PM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="02:00 PM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">02:00 PM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="03:00 PM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">03:00 PM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="04:00 PM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">04:00 PM</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input class="radio-input" type="radio" name="time" value="05:00 PM" disabled>
-                                        <span class="radio-tile">
-                                            <span class="radio-icon">
-                                                <i class="fa-solid fa-clock"></i>
-                                            </span>
-                                            <span class="radio-label">05:00 PM</span>
-                                        </span>
-                                    </label>
+                                <hr>
 
+                                <div class="time-selection">
+                                    <div class="radio-inputs text-center">
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="8:00 AM"
+                                                disabled>
+                                            <span class="radio-tile">
+                                                <span class="radio-label">08:00 AM</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="9:00 AM"
+                                                disabled>
+                                            <span class="radio-tile">
+
+                                                <span class="radio-label">09:00 AM</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="10:00 AM"
+                                                disabled>
+                                            <span class="radio-tile">
+
+                                                <span class="radio-label">10:00 AM</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="11:00 AM"
+                                                disabled>
+                                            <span class="radio-tile">
+
+                                                <span class="radio-label">11:00 AM</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="01:00 PM"
+                                                disabled>
+                                            <span class="radio-tile">
+
+                                                <span class="radio-label">01:00 PM</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="02:00 PM"
+                                                disabled>
+                                            <span class="radio-tile">
+
+                                                <span class="radio-label">02:00 PM</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="03:00 PM"
+                                                disabled>
+                                            <span class="radio-tile">
+
+                                                <span class="radio-label">03:00 PM</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="time" value="04:00 PM"
+                                                disabled>
+                                            <span class="radio-tile">
+
+                                                <span class="radio-label">04:00 PM</span>
+                                            </span>
+                                        </label>
+
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="card">
+
                                 <div class="d-flex align-items-center">
                                     <div class="icon d-flex align-items-center">
-                                        <i class="fa-solid fa-calendar-days fa-lg"></i>
-                                        <span>Time and date
+                                        <i class="fa-solid fa-calendar-days fa-lg me-2"></i>
+                                        <span class="review-timedate">Time and date
                                             <small class="d-block date-time">
-
+                                                No date and time selected
                                             </small>
                                         </span>
                                     </div>
 
                                 </div>
+
+                                <hr>
+
+
+                                <div class="form-group mb-3">
+                                    <label class="mb-2" for="name">Enter Full name</label>
+                                    <input class="input" type="text" name="name">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label  class="mb-2" for="email">Email</label>
+                                    <input class="input" type="email" name="email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label  class="mb-2" for="phone">Number</label>
+                                    <input class="input" type="text" name="phone">
+
+                                </div>
+                                <input type="hidden" name="status" value="Pending">
+                                <button type="submit">
+                                    Submit
+                                    <div class="arrow-wrapper">
+                                        <div class="arrow"></div>
+                                    </div>
+                                </button>
                             </div>
 
-                            <div class="form-group mb-2">
-                                <label for="name">Enter Full name</label>
-                                <input type="text" class="form-control" name="name">
-                            </div>
 
-                            <div class="form-group mb-2">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" name="email">
-                            </div>
-                            <div class="form-group mb-2">
-                                <label for="numner">Number</label>
-                                <input type="text" class="form-control" name="number">
-
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
-
-                        
-                    
-                    </div>
-                </form>
+                    </form>
                 </div>
 
             </div>
@@ -193,7 +177,7 @@
             var avaslots = document.querySelector('.slotss');
             var selectedDateEl = document.querySelector('.selected-date');
             var timeInputElements = document.getElementsByClassName('radio-input');
-        
+
             var displaySmall = document.querySelector('.date-time');
             var selectedDate = '';
             var selectedTime = '';
@@ -211,9 +195,9 @@
                     //     month: 'long',
                     //     day: 'numeric'
                     // });
-                   
+
                     selectedDateEl.textContent = selectedDate;
-                  
+
 
                     // Enable the time radio buttons when a date is selected
                     for (var i = 0; i < timeInputElements.length; i++) {
@@ -265,7 +249,7 @@
                     });
 
                     displaySmall.textContent = `${selectedTime} ${formattedDates}`;
-                    
+
                 }
             }
         });
