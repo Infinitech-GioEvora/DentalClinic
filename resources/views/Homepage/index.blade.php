@@ -14,7 +14,7 @@
                                 <h1 class="slogan">Trusted <br> <strong>Dental Clinic</strong></h1>
                                 <p class="desc">a dental clinic is a specialized healthcare facility that focuses on
                                     diagnosing.</p>
-                                <button class="btn btn-primary">Book Now</button>
+                                <button class="btn btn-primary"><a href="dental/book-now">Book Now</a></button>
                             </div>
                         </div>
 

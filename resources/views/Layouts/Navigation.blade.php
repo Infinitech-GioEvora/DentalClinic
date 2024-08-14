@@ -16,6 +16,7 @@
                         <li class="nav-item"><a href="/dental/about">About</a></li>
                         <li class="nav-item"><a href="/dental/services">Services</a></li>
                         <li class="nav-item"><a href="/dental/blog">Blog</a></li>
+                        <li class="nav-item"><a href="/dental/testimonial">Testimonials</a></li>
                         <li class="nav-item"><a href="/dental/contact">Contact</a></li>
                         <li class="nav-item"><a href=""><a href="/dental/book-now" class="btn btn-primary">Book Now</a></li>
                     </ul>

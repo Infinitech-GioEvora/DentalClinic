@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ScheduleController;
 
 
@@ -37,6 +38,9 @@ Route::prefix('dental')->group(function () {
      Route::get('/contact', function () {
         return view('Homepage/Contact');
      });
+     Route::get('/testimonial', function () {
+      return view('Homepage/Testimonials');
+   });
    
 });
 
@@ -58,3 +62,4 @@ Route::get('/api/getSlots', [ScheduleController::class, 'getSlots']);
 
 Route::post('/submit/reservation', [ScheduleController::class, 'add']);
 
+Route::post('/submit/inquiry', [ContactController::class, 'submitinquiry']);
